@@ -1,10 +1,16 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
+    "module": "es2015",
     "declaration": true,
     "rootDir": "./src",
     "outDir": "./build"
   },
+  "exclude": [
+    "src/*.test.ts"
+  ],
+  "include": [
+    "src/*.ts"
+  ],
   "parcelTsPluginOptions": {
   }
 }
