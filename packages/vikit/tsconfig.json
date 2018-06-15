@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "rootDir": "./src",
+    "outDir": "./build"
+  },
+  "parcelTsPluginOptions": {
+  }
+}
