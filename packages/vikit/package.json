@@ -7,6 +7,9 @@
   "license": "MIT",
   "main": "build/index.js",
   "typings": "build/index.d.ts",
+  "files": [
+    "build/*"
+  ],
   "scripts": {
     "start": "run-p watch:tsc watch:parcel",
     "build": "run-s build:parcel build:tsc",
