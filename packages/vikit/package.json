@@ -16,6 +16,7 @@
     "start": "run-p watch:tsc watch:parcel",
     "build": "run-s build:tsc build:parcel",
     "test": "jest",
+    "test:watch": "jest --watchAll",
     "watch:parcel": "parcel watch src/index.ts --target node",
     "watch:tsc": "tsc --watch",
     "build:parcel": "parcel build build/index.js --target node",
