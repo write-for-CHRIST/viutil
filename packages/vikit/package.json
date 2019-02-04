@@ -1,13 +1,26 @@
 {
   "name": "vikit",
   "version": "0.3.2",
-  "description": "Vietnamese Kit",
+  "description": "Vietnamese Kit - Useful utilities for Vietnamese developer.",
   "repository": "https://github.com/write-for-CHRIST/viutil.git",
   "author": "Nam Pham <nampdn@protonmail.com>",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "build/index.d.ts",
   "module": "build/index.js",
+  "keywords": [
+    "vietnamese",
+    "vietnam",
+    "phonenumber",
+    "tieng viet",
+    "khong dau",
+    "chuyen doi dau so",
+    "nha mang",
+    "mobifone",
+    "vinaphone",
+    "viettel",
+    "vietnamobile"
+  ],
   "files": [
     "build/*",
     "dist/*"
