@@ -1,21 +1,113 @@
 0 silly input [ 'publish' ]
-1 silly flags { _: [ 'publish' ], 'reject-cycles': false, rejectCycles: false }
-2 verbose rootPath /Users/nampdn/Projects/wfc/@lib/wfc.utility
+1 silly flags { _: [ 'publish' ],
+1 silly flags   'reject-cycles': false,
+1 silly flags   rejectCycles: false,
+1 silly flags   'conventional-commits': true,
+1 silly flags   conventionalCommits: true }
+2 verbose rootPath /workspace/viutil
 3 info version 2.11.0
 4 silly isInitialized
 5 silly isInitialized true
-6 silly existsSync /Users/nampdn/Projects/wfc/@lib/wfc.utility/VERSION
+6 silly existsSync /workspace/viutil/VERSION
 7 silly initialize attempt
-8 info current version 0.1.0
+8 info current version 0.2.0
 9 silly isDetachedHead
 10 silly getCurrentBranch
-11 error initialize caught error
-12 error Error: fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
-12 error Use '--' to separate paths from revisions, like this:
-12 error 'git <command> [<revision>...] -- [<file>...]'
-12 error
-12 error     at Function.module.exports.sync (/Users/nampdn/.nvm/versions/node/v8.9.1/lib/node_modules/lerna/node_modules/execa/index.js:303:26)
-12 error     at Function.execSync (/Users/nampdn/.nvm/versions/node/v8.9.1/lib/node_modules/lerna/lib/ChildProcessUtilities.js:59:30)
-12 error     at Function.getCurrentBranch (/Users/nampdn/.nvm/versions/node/v8.9.1/lib/node_modules/lerna/lib/GitUtilities.js:202:59)
-12 error     at Function.isDetachedHead (/Users/nampdn/.nvm/versions/node/v8.9.1/lib/node_modules/lerna/lib/GitUtilities.js:45:37)
-12 error     at PublishCommand.initialize (/Users/nampdn/.nvm/versions/node/v8.9.1/lib/node_modules/lerna/lib/commands/PublishCommand.js:260:36)
+11 verbose getCurrentBranch master
+12 verbose isDetachedHead false
+13 silly getCurrentBranch
+14 verbose getCurrentBranch master
+15 silly getUpdates
+16 info Checking for updated packages...
+17 silly hasTags
+18 verbose hasTags true
+19 silly getLastTag
+20 verbose getLastTag v0.2.0
+21 info Comparing with v0.2.0.
+22 silly diffSinceIn v0.2.0 packages/vikit
+23 silly diff packages/vikit/package.json
+23 silly diff packages/vikit/src/phone-prefix.test.ts
+23 silly diff packages/vikit/src/phone-prefix.ts
+24 verbose updated vikit
+25 info Checking for prereleased packages...
+26 silly collectDependents
+27 silly isPackageDependentOf vikit vikit
+28 silly collectUpdates
+29 verbose has filtered update vikit
+30 silly recommendFixedVersion for vikit at /workspace/viutil/packages/vikit
+31 verbose recommendFixedVersion increment 0.2.0 by minor
+32 silly initialize success
+33 silly execute attempt
+34 silly addFile /workspace/viutil/lerna.json
+35 silly runScriptSync preversion undefined
+36 silly runScriptSync preversion vikit
+37 silly runScriptSync version vikit
+38 silly updateFixedChangelog for vikit at /workspace/viutil/packages/vikit
+39 silly existsSync /workspace/viutil/packages/vikit/CHANGELOG.md
+40 silly readFileSync /workspace/viutil/packages/vikit/CHANGELOG.md
+41 silly updateFixedChangelog writing new entry: "<a name=\"0.3.0\"></a>\n# [0.3.0](https://github.com/write-for-CHRIST/viutil/compare/v0.2.0...v0.3.0) (2019-02-04)\n\n\n### Features\n\n* **vikit:** add changePhonePrefix ([903cbf9](https://github.com/write-for-CHRIST/viutil/commit/903cbf9))\n\n\n"
+42 silly writeFileSync [ '/workspace/viutil/packages/vikit/CHANGELOG.md',
+42 silly writeFileSync   '# Change Log\n\nAll notable changes to this project will be documented in this file.\nSee [Conventional Commits](https://conventionalcommits.org) for commit guidelines.\n\n<a name="0.3.0"></a>\n# [0.3.0](https://github.com/write-for-CHRIST/viutil/compare/v0.2.0...v0.3.0) (2019-02-04)\n\n\n### Features\n\n* **vikit:** add changePhonePrefix ([903cbf9](https://github.com/write-for-CHRIST/viutil/commit/903cbf9))\n\n\n\n\n<a name="0.2.0"></a>\n# [0.2.0](https://github.com/write-for-CHRIST/viutil/compare/v0.1.1...v0.2.0) (2018-07-19)\n\n\n### Bug Fixes\n\n* **vikit:** correct wrong main path ([885442a](https://github.com/write-for-CHRIST/viutil/commit/885442a))\n\n\n### Features\n\n* **vikit:** rename diacritic functions ([750e4b4](https://github.com/write-for-CHRIST/viutil/commit/750e4b4))\n\n\n\n\n<a name="0.2.0-alpha.885442a9"></a>\n# [0.2.0-alpha.885442a9](https://github.com/write-for-CHRIST/viutil/compare/v0.1.1...v0.2.0-alpha.885442a9) (2018-06-15)\n\n\n### Bug Fixes\n\n* **vikit:** correct wrong main path ([885442a](https://github.com/write-for-CHRIST/viutil/commit/885442a))\n\n\n### Features\n\n* **vikit:** rename diacritic functions ([750e4b4](https://github.com/write-for-CHRIST/viutil/commit/750e4b4))' ]
+43 verbose updateFixedChangelog wrote /workspace/viutil/packages/vikit/CHANGELOG.md
+44 silly updateFixedRootChangelog for undefined at /workspace/viutil
+45 silly existsSync /workspace/viutil/CHANGELOG.md
+46 silly readFileSync /workspace/viutil/CHANGELOG.md
+47 silly updateFixedRootChangelog writing new entry: "<a name=\"0.3.0\"></a>\n# [0.3.0](https://github.com/write-for-CHRIST/viutil/compare/v0.2.0...v0.3.0) (2019-02-04)\n\n\n### Features\n\n* **vikit:** add changePhonePrefix ([903cbf9](https://github.com/write-for-CHRIST/viutil/commit/903cbf9))\n\n\n"
+48 silly writeFileSync [ '/workspace/viutil/CHANGELOG.md',
+48 silly writeFileSync   '# Change Log\n\nAll notable changes to this project will be documented in this file.\nSee [Conventional Commits](https://conventionalcommits.org) for commit guidelines.\n\n<a name="0.3.0"></a>\n# [0.3.0](https://github.com/write-for-CHRIST/viutil/compare/v0.2.0...v0.3.0) (2019-02-04)\n\n\n### Features\n\n* **vikit:** add changePhonePrefix ([903cbf9](https://github.com/write-for-CHRIST/viutil/commit/903cbf9))\n\n\n\n\n<a name="0.2.0"></a>\n# [0.2.0](https://github.com/write-for-CHRIST/viutil/compare/v0.1.1...v0.2.0) (2018-07-19)\n\n\n### Bug Fixes\n\n* **vikit:** correct wrong main path ([885442a](https://github.com/write-for-CHRIST/viutil/commit/885442a))\n\n\n### Features\n\n* **vikit:** rename diacritic functions ([750e4b4](https://github.com/write-for-CHRIST/viutil/commit/750e4b4))\n\n\n\n\n# Change Log\n\nAll notable changes to this project will be documented in this file.\nSee [Conventional Commits](https://conventionalcommits.org) for commit guidelines.\n\n**Note:** Version bump only for package undefined' ]
+49 verbose updateFixedRootChangelog wrote /workspace/viutil/CHANGELOG.md
+50 silly runScriptSync version undefined
+51 silly addFile /workspace/viutil/packages/vikit/CHANGELOG.md
+52 silly addFile /workspace/viutil/packages/vikit/package.json
+53 silly addFile /workspace/viutil/CHANGELOG.md
+54 silly commit v0.3.0
+55 verbose commit [ 'commit', '--no-verify', '-m', 'v0.3.0' ]
+56 silly addTag v0.3.0
+57 silly runScriptSync postversion vikit
+58 silly runScriptSync postversion undefined
+59 info publish Publishing packages to npm...
+60 silly existsSync /workspace/viutil/packages/vikit/scripts/prepublish.js
+61 verbose execScript No prepublish script found at /workspace/viutil/packages/vikit/scripts/prepublish.js
+62 verbose publishing vikit
+63 silly publishTaggedInDir latest vikit
+64 silly getExecOpts { cwd: '/workspace/viutil/packages/vikit' }
+65 error publish Retrying failed publish: vikit
+66 verbose publish error undefined
+67 verbose publishing vikit
+68 silly publishTaggedInDir latest vikit
+69 silly getExecOpts { cwd: '/workspace/viutil/packages/vikit' }
+70 error publish Retrying failed publish: vikit
+71 verbose publish error undefined
+72 verbose publishing vikit
+73 silly publishTaggedInDir latest vikit
+74 silly getExecOpts { cwd: '/workspace/viutil/packages/vikit' }
+75 error publish Retrying failed publish: vikit
+76 verbose publish error undefined
+77 verbose publishing vikit
+78 silly publishTaggedInDir latest vikit
+79 silly getExecOpts { cwd: '/workspace/viutil/packages/vikit' }
+80 error publish Retrying failed publish: vikit
+81 verbose publish error undefined
+82 verbose publishing vikit
+83 silly publishTaggedInDir latest vikit
+84 silly getExecOpts { cwd: '/workspace/viutil/packages/vikit' }
+85 error publish Ran out of retries while publishing vikit Error: Command failed: yarn publish --tag latest --new-version 0.3.0
+85 error publish error No token found and can't prompt for login when running with --non-interactive.
+85 error publish [1/4] Bumping version...
+85 error publish info Current version: 0.3.0
+85 error publish [2/4] Logging in...
+85 error publish info Visit https://yarnpkg.com/en/docs/cli/publish for documentation about this command.
+85 error publish
+85 error publish     at Promise.all.then.arr (/workspace/viutil/node_modules/execa/index.js:236:11)
+85 error publish     at <anonymous>
+85 error publish     at process._tickCallback (internal/process/next_tick.js:189:7)
+86 error execute callback with error
+87 error Error: Command failed: yarn publish --tag latest --new-version 0.3.0
+87 error error No token found and can't prompt for login when running with --non-interactive.
+87 error [1/4] Bumping version...
+87 error info Current version: 0.3.0
+87 error [2/4] Logging in...
+87 error info Visit https://yarnpkg.com/en/docs/cli/publish for documentation about this command.
+87 error
+87 error     at Promise.all.then.arr (/workspace/viutil/node_modules/execa/index.js:236:11)
+87 error     at <anonymous>
